@@ -5,7 +5,7 @@ import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
-public class WordCount {
+public class WordCountFromLocalFile {
 
     public static void main(String[] args) throws Exception {
 
