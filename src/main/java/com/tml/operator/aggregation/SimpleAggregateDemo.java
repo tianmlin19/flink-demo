@@ -27,7 +27,7 @@ public class SimpleAggregateDemo extends AbsStreamCommonService<CommonMsg> {
          * max、maxyBy的区别在于
          * max不会对非比较字段重新赋值，而maxBy会更新非比较字段的值
          */
-        SingleOutputStreamOperator<CommonMsg> minBy = keyStream.minBy("time");
+        SingleOutputStreamOperator<CommonMsg> minBy = keyStream.min("time");
         //min.print();
         minBy.print();
     }
